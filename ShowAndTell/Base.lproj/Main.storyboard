@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AXZ-ef-SNL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShowAndTell" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vxh-WA-gcm">
+                                <rect key="frame" x="36" y="94" width="340" height="92"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Z5B-H3-ehd"/>
+                                    <constraint firstAttribute="width" constant="340" id="pT0-qe-h2W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="92" id="wh7-MC-WYx"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V7M-dp-7WD">
+                                <rect key="frame" x="36" y="467" width="340" height="172"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="172" id="D4S-U0-7iF"/>
+                                    <constraint firstAttribute="width" constant="340" id="YSH-IK-3iG"/>
+                                    <constraint firstAttribute="height" constant="172" id="evN-HV-qmd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIF-9k-UR3">
+                                <rect key="frame" x="64" y="795" width="283" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="COCO_train2014_000000005340.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FMV-xq-T36">
+                                <rect key="frame" x="25" y="217" width="361" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="ZS8-7j-3es"/>
+                                    <constraint firstAttribute="height" constant="234" id="fbC-Pf-bLD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GIF-9k-UR3" firstAttribute="centerX" secondItem="FMV-xq-T36" secondAttribute="centerX" id="8bU-N4-eLd"/>
+                            <constraint firstItem="vxh-WA-gcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="97e-EJ-vLy"/>
+                            <constraint firstItem="FMV-xq-T36" firstAttribute="firstBaseline" secondItem="vxh-WA-gcm" secondAttribute="baseline" constant="26" id="IZs-5Y-S4s"/>
+                            <constraint firstItem="GIF-9k-UR3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="NM4-L3-BFx"/>
+                            <constraint firstItem="FMV-xq-T36" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="OJi-P8-ID8"/>
+                            <constraint firstItem="V7M-dp-7WD" firstAttribute="trailing" secondItem="vxh-WA-gcm" secondAttribute="trailing" id="hIt-ps-MHM"/>
+                            <constraint firstItem="V7M-dp-7WD" firstAttribute="leading" secondItem="vxh-WA-gcm" secondAttribute="leading" id="hoQ-FU-goM"/>
+                            <constraint firstItem="FMV-xq-T36" firstAttribute="top" secondItem="vxh-WA-gcm" secondAttribute="top" constant="118" id="j6D-NC-tgo"/>
+                            <constraint firstItem="V7M-dp-7WD" firstAttribute="firstBaseline" secondItem="FMV-xq-T36" secondAttribute="baseline" constant="21" symbolType="layoutAnchor" id="rKu-fH-Ao0"/>
+                            <constraint firstAttribute="bottom" secondItem="V7M-dp-7WD" secondAttribute="bottom" constant="234" id="tB7-7D-HqR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vxh-WA-gcm" secondAttribute="trailing" constant="38" id="teN-Ig-D3d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GIF-9k-UR3" secondAttribute="bottom" constant="67" id="zhK-HN-dvt"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lu4-FM-kqo" appends="YES" id="rEW-T7-uxc"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="pv2-en-VLM"/>
+                    <connections>
+                        <outlet property="buttonview" destination="GIF-9k-UR3" id="EFI-HM-6wR"/>
+                        <outlet property="imageView" destination="FMV-xq-T36" id="zLV-Oy-ShX"/>
+                        <outlet property="speechview" destination="vxh-WA-gcm" id="Jkb-1G-Y2w"/>
+                        <outlet property="tap" destination="lu4-FM-kqo" id="kSK-Yc-hBH"/>
+                        <outlet property="textView" destination="V7M-dp-7WD" id="CX5-eS-GzI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lu4-FM-kqo">
+                    <connections>
+                        <action selector="taptapped:" destination="BYZ-38-t0r" id="p3r-gC-x8o"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="80.357142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xRE-1Y-fei">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AXZ-ef-SNL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gt6-EV-jvo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bVP-6X-DCk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CF8-DV-F6s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="COCO_train2014_000000005340.jpg" width="640" height="480"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
